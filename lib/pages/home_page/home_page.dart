@@ -43,7 +43,7 @@ class _HomeViewState extends State<HomeView> {
               color: Colors.grey, // Blank box
             ),
             title: Text(subArr[index]['name']),
-            subtitle: Text('\$${subArr[index]['price']}'),
+            subtitle: Text('\₹${subArr[index]['price']}'),
           );
         },
       ),

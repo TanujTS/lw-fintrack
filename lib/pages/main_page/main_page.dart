@@ -40,13 +40,13 @@ class _MainTabViewState extends State<MainTabView> {
                 currentTabView = const HomeView();
                 break;
               case 1:
-                currentTabView = const CalendarView();
+                currentTabView = const Spendings();
                 break;
               case 2:
-                currentTabView = const SpendingBudgetsView();
+                currentTabView = const Subscriptions();
                 break;
               case 3:
-                currentTabView = const CardsView();
+                currentTabView = const Challenges();
                 break;
             }
           });

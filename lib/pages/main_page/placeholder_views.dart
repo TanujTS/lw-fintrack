@@ -1,48 +1,48 @@
 import 'package:flutter/material.dart';
 
-class CalendarView extends StatelessWidget {
-  const CalendarView({super.key});
+class Spendings extends StatelessWidget {
+  const Spendings({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calendar View'),
+        title: Text('Spendings Analysis'),
       ),
       body: Center(
-        child: Text('Calendar View Placeholder'),
+        child: Text('Placeholder'),
       ),
     );
   }
 }
 
-class SpendingBudgetsView extends StatelessWidget {
-  const SpendingBudgetsView({super.key});
+class Subscriptions extends StatelessWidget {
+  const Subscriptions({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Spending Budgets View'),
+        title: Text('Subscriptions'),
       ),
       body: Center(
-        child: Text('Spending Budgets View Placeholder'),
+        child: Text('Placeholder'),
       ),
     );
   }
 }
 
-class CardsView extends StatelessWidget {
-  const CardsView({super.key});
+class Challenges extends StatelessWidget {
+  const Challenges({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cards View'),
+        title: Text('Challenges & Rewards'),
       ),
       body: Center(
-        child: Text('Cards View Placeholder'),
+        child: Text('Placeholder'),
       ),
     );
   }
