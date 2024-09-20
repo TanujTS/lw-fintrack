@@ -13,25 +13,24 @@ class _HomeViewState extends State<HomeView> {
   bool isSubscription = true;
   List subArr = [
     {"name": "Spotify", "price": "59"},
-    {"name": "YouTube Premium", "price": "189"},
+    {"name": "YouTube Premium", "price": "199"},
     {"name": "NetFlix", "price": "799"}
   ];
 
   List bilArr = [
     {"name": "Spotify", "date": DateTime(2023, 07, 25), "price": "59"},
-    {
-      "name": "YouTube Premium",
-      "date": DateTime(2023, 07, 25),
-      "price": "18.99"
-    },
+    {"name": "YouTube Premium", "date": DateTime(2023, 07, 25), "price": "199"},
     {"name": "NetFlix", "date": DateTime(2023, 07, 25), "price": "799"}
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: TColor.gray50,
       appBar: AppBar(
         title: Text('Home Page'),
+        backgroundColor: TColor.primary,
+        foregroundColor: TColor.primaryText,
       ),
       body: ListView.builder(
         itemCount: subArr.length,

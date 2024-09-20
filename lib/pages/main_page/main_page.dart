@@ -53,36 +53,31 @@ class _MainTabViewState extends State<MainTabView> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Container(
-              width: 24,
-              height: 24,
-              color: Colors.grey, // Blank box
-            ),
-            label: 'Home',
+            icon: SizedBox(
+                width: 24, height: 24, child: Image.asset('assets/home.png')),
+            label: '',
+            backgroundColor: TColor.primary,
           ),
           BottomNavigationBarItem(
-            icon: Container(
-              width: 24,
-              height: 24,
-              color: Colors.grey, // Blank box
-            ),
-            label: 'Calendar',
+            icon: SizedBox(
+                width: 24,
+                height: 24,
+                child: Image.asset('assets/spendings.png')),
+            label: '',
           ),
           BottomNavigationBarItem(
-            icon: Container(
-              width: 24,
-              height: 24,
-              color: Colors.grey, // Blank box
-            ),
-            label: 'Budgets',
+            icon: SizedBox(
+                width: 24,
+                height: 24,
+                child: Image.asset('assets/subscriptions.png')),
+            label: '',
           ),
           BottomNavigationBarItem(
-            icon: Container(
-              width: 24,
-              height: 24,
-              color: Colors.grey, // Blank box
-            ),
-            label: 'Cards',
+            icon: SizedBox(
+                width: 24,
+                height: 24,
+                child: Image.asset('assets/challenges.png')),
+            label: '',
           ),
         ],
       ),

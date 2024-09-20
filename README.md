@@ -1,6 +1,6 @@
 # fintrack
 
-A new Flutter project.
+A finance tracking app made by LoanWolves for DevJams'24.
 
 ## Getting Started
 

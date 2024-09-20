@@ -19,12 +19,23 @@ class MyApp extends StatelessWidget {
         fontFamily: "Inter",
         colorScheme: ColorScheme.fromSeed(
           seedColor: TColor.primary,
-          background: TColor.gray80,
+          surface: TColor.gray50,
           primary: TColor.primary,
           primaryContainer: TColor.gray60,
           secondary: TColor.secondary,
         ),
         useMaterial3: false,
+        appBarTheme: AppBarTheme(
+          backgroundColor: TColor.primary,
+          foregroundColor: TColor.primaryText,
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: const Color.fromARGB(255, 26, 14, 14),
+          selectedItemColor: TColor.primary,
+          unselectedItemColor: TColor.gray50,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+        ),
       ),
       home: const MainTabView(),
     );
