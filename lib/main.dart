@@ -1,43 +1,63 @@
 import 'package:flutter/material.dart';
-import 'package:fintrack/colorscheme/color_extensions.dart';
-import 'package:fintrack/pages/main_page/main_page.dart';
+import 'screens/home_screen.dart';
+import 'screens/add_expenditure_screen.dart';
+import 'screens/subscription_screen.dart';
+import 'screens/spending_screen.dart';
+import 'screens/rewards_screen.dart';
+import 'widgets/bottom_navbar.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FinTrack',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: "Inter",
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: TColor.primary,
-          surface: TColor.gray50,
-          primary: TColor.primary,
-          primaryContainer: TColor.gray60,
-          secondary: TColor.secondary,
+      title: 'Expense Tracker',
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.cyan,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Colors.teal
         ),
-        useMaterial3: false,
-        appBarTheme: AppBarTheme(
-          backgroundColor: TColor.primary,
-          foregroundColor: TColor.primaryText,
-        ),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: const Color.fromARGB(255, 26, 14, 14),
-          selectedItemColor: TColor.primary,
-          unselectedItemColor: TColor.gray50,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-        ),
+        scaffoldBackgroundColor: Colors.black,
       ),
-      home: const MainTabView(),
+      home: MainScreen(),
+    );
+  }
+}
+
+class MainScreen extends StatefulWidget {
+  @override
+  _MainScreenState createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
+  int _currentIndex = 0;
+
+  final List<Widget> _pages = [
+    HomeScreen(),
+    AddExpenditureScreen(),
+    SubscriptionScreen(),
+    SpendingScreen(),
+    RewardsScreen(),
+  ];
+
+  void _onTap(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _pages[_currentIndex],
+      bottomNavigationBar: BottomNavBar(
+        currentIndex: _currentIndex,
+        onTap: _onTap,
+      ),
     );
   }
 }
