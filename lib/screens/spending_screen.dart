@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class SpendingScreen extends StatelessWidget {
@@ -42,17 +43,26 @@ class SpendingScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 20)),
             const SizedBox(height: 20),
             // Placeholder for circular chart
-            Container(
-              height: 200,
-              width: 200,
-              child: const Center(
-                child: Text('Pie Chart Data'),
+            PieChart(PieChartData(sections: [
+              PieChartSectionData(
+                color: Colors.red,
+                value: 20,
+                title: 'Entertainment',
+                radius: 50,
               ),
-              decoration: BoxDecoration(
-                color: Colors.cyan,
-                shape: BoxShape.circle,
+              PieChartSectionData(
+                color: Colors.green,
+                value: 30,
+                title: 'Transport',
+                radius: 50,
               ),
-            ),
+              PieChartSectionData(
+                color: Colors.yellow,
+                value: 10,
+                title: 'Shopping',
+                radius: 50,
+              )
+            ]))
           ],
         ),
       ),
