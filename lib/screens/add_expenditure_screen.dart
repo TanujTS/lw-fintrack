@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fintrack/models/color_theme.dart';
 
 class AddExpenditureScreen extends StatelessWidget {
   const AddExpenditureScreen({super.key});
@@ -7,25 +8,25 @@ class AddExpenditureScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
-          
         ),
         elevation: 10,
-        toolbarHeight: 100,
+        toolbarHeight: 70,
         centerTitle: true,
         title: const Text(
-          'Add Expenditure',
+          'Expenditure',
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
-            fontSize: 40,
+            fontSize: 35,
+            color: ColorTheme.primaryColor,
           ),
         ),
-        backgroundColor: Colors.cyan,
+        backgroundColor: ColorTheme.secondaryBgColor,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

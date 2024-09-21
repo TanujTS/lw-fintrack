@@ -44,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const AddExpenditureScreen(),
     const SubscriptionScreen(),
-    const SpendingScreen(),
+    SpendingScreen(),
     const RewardsScreen(),
   ];
 

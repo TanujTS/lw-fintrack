@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fintrack/models/color_theme.dart';
 
 class SubscriptionScreen extends StatelessWidget {
   const SubscriptionScreen({super.key});
@@ -9,22 +10,23 @@ class SubscriptionScreen extends StatelessWidget {
       appBar: AppBar(
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(50),
+            bottom: Radius.circular(60),
           ),
         ),
         elevation: 10,
-        toolbarHeight: 80,
+        toolbarHeight: 70,
         centerTitle: true,
         title: const Text(
           'Subscriptions',
           textAlign: TextAlign.center,
-         style: TextStyle(
+          style: TextStyle(
             fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
-            fontSize: 40,
+            fontSize: 35,
+            color: ColorTheme.primaryColor,
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 22, 66, 60),
+        backgroundColor: ColorTheme.secondaryBgColor,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
