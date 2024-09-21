@@ -8,7 +8,7 @@ class SpendingScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
@@ -17,7 +17,7 @@ class SpendingScreen extends StatelessWidget {
         elevation: 10,
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Spending',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -31,20 +31,20 @@ class SpendingScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text('Today\'s Expenditure: Rs. 45', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 10),
-            Text('Weekly Expenditure: Rs. 500', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 10),
-            Text('Monthly Expenditure: Rs. 3,500', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            Text('Category Wise Expenditure', style: TextStyle(fontSize: 20)),
-            SizedBox(height: 20),
+            const Text('Today\'s Expenditure: Rs. 45', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 10),
+            const Text('Weekly Expenditure: Rs. 500', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 10),
+            const Text('Monthly Expenditure: Rs. 3,500', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 20),
+            const Text('Category Wise Expenditure', style: TextStyle(fontSize: 20)),
+            const SizedBox(height: 20),
             // Placeholder for circular chart
             Container(
               height: 150,
               width: 150,
               color: Colors.grey[700],
-              child: Center(child: Text('Pie Chart Placeholder')),
+              child: const Center(child: Text('Pie Chart Placeholder')),
             ),
           ],
         ),

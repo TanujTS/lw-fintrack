@@ -8,7 +8,7 @@ class SubscriptionScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
@@ -17,7 +17,7 @@ class SubscriptionScreen extends StatelessWidget {
         elevation: 10,
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Subscriptions',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -31,26 +31,26 @@ class SubscriptionScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text('Rs. 3,598 spent this month', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            Text('Current Subscriptions', style: TextStyle(fontSize: 20)),
-            ListTile(
+            const Text('Rs. 3,598 spent this month', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 20),
+            const Text('Current Subscriptions', style: TextStyle(fontSize: 20)),
+            const ListTile(
               title: Text('Spotify'),
             ),
-            ListTile(
+            const ListTile(
               title: Text('YouTube'),
             ),
-            ListTile(
+            const ListTile(
               title: Text('Netflix'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Add Subscription'),
+              child: const Text('Add Subscription'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Remove Subscription'),
+              child: const Text('Remove Subscription'),
             ),
           ],
         ),

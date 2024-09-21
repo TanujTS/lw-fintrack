@@ -8,7 +8,7 @@ class RewardsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
@@ -17,7 +17,7 @@ class RewardsScreen extends StatelessWidget {
         elevation: 10,
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Rewards',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -31,7 +31,7 @@ class RewardsScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text('Rewards', style: TextStyle(fontSize: 24)),
+            const Text('Rewards', style: TextStyle(fontSize: 24)),
             Expanded(
               child: ListView(
                 children: const [

@@ -11,6 +11,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -37,11 +41,11 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomeScreen(),
-    AddExpenditureScreen(),
-    SubscriptionScreen(),
-    SpendingScreen(),
-    RewardsScreen(),
+    const HomeScreen(),
+    const AddExpenditureScreen(),
+    const SubscriptionScreen(),
+    const SpendingScreen(),
+    const RewardsScreen(),
   ];
 
   void _onTap(int index) {

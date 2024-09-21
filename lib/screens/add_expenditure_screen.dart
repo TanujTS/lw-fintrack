@@ -8,7 +8,7 @@ class AddExpenditureScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
@@ -17,7 +17,7 @@ class AddExpenditureScreen extends StatelessWidget {
         elevation: 10,
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Add Expenditure',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -31,10 +31,10 @@ class AddExpenditureScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Opacity(
+            const Opacity(
               opacity: 0.5,
               child: Column(
-              children: const [
+              children: [
                 TextField(
                 decoration: InputDecoration(labelText: 'Cost'),
                 ),
@@ -50,10 +50,10 @@ class AddExpenditureScreen extends StatelessWidget {
               ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Add Expenditure'),
+              child: const Text('Add Expenditure'),
             ),
           ],
         ),

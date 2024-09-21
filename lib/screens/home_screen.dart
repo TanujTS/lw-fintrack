@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(60),
           ),
@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         elevation: 10,
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Home Page',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -31,11 +31,11 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text('Today\'s Spending: Rs. 57', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 10),
-            Text('Bank Balance: Rs. 4,500', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            Text('Recent Transactions', style: TextStyle(fontSize: 20)),
+            const Text('Today\'s Spending: Rs. 57', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 10),
+            const Text('Bank Balance: Rs. 4,500', style: TextStyle(fontSize: 24)),
+            const SizedBox(height: 20),
+            const Text('Recent Transactions', style: TextStyle(fontSize: 20)),
             Expanded(
               child: ListView(
                 children: const [
