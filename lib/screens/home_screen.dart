@@ -42,16 +42,42 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 20, color: ColorTheme.primaryColor)),
             Expanded(
               child: ListView(
-                children: const [
-                  ListTile(
-                    title: Text('Transaction 1'),
-                    subtitle: Text('Rs. 57'),
-                    tileColor: ColorTheme.secondaryColor,
+                children: [
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 5.0),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
+                    child: ListTile(
+                      title: Text('Transaction 1'),
+                      subtitle: Text('Rs. 57'),
+                    ),
                   ),
-                  ListTile(
-                    title: Text('Transaction 2'),
-                    subtitle: Text('Rs. 100'),
-                    tileColor: ColorTheme.secondaryColor,
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 5.0),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
+                    child: ListTile(
+                      title: Text('Transaction 2'),
+                      subtitle: Text('Rs. 100'),
+                    ),
                   ),
                 ],
               ),
