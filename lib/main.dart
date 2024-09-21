@@ -5,6 +5,7 @@ import 'screens/subscription_screen.dart';
 import 'screens/spending_screen.dart';
 import 'screens/rewards_screen.dart';
 import 'widgets/bottom_navbar.dart';
+import 'package:fintrack/models/color_theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,11 +20,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Expense Tracker',
       theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.cyan,
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          secondary: Colors.teal
-        ),
-        scaffoldBackgroundColor: const Color.fromARGB(255, 42, 42, 42),
+        primaryColor: ColorTheme.primaryColor,
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: ColorTheme.secondaryColor),
+        scaffoldBackgroundColor: ColorTheme.primaryBgColor,
       ),
       home: MainScreen(),
     );
