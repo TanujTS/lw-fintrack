@@ -31,23 +31,51 @@ class AddExpenditureScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            const Opacity(
+            Opacity(
               opacity: 0.5,
               child: Column(
-              children: [
-                TextField(
-                decoration: InputDecoration(labelText: 'Cost'),
-                ),
-                TextField(
-                decoration: InputDecoration(labelText: 'Item'),
-                ),
-                TextField(
-                decoration: InputDecoration(labelText: 'Description'),
-                ),
-                TextField(
-                decoration: InputDecoration(labelText: 'Category'),
-                ),
-              ],
+                children: [
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Cost',
+                      labelStyle: TextStyle(color: Colors.grey[700]),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[400]!),
+                      ),
+                    ),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Item',
+                      labelStyle: TextStyle(color: Colors.grey[700]),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[400]!),
+                      ),
+                    ),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Description',
+                      labelStyle: TextStyle(color: Colors.grey[700]),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[400]!),
+                      ),
+                    ),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Category',
+                      labelStyle: TextStyle(color: Colors.grey[700]),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[400]!),
+                      ),
+                    ),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 20),
