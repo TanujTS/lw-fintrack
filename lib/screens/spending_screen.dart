@@ -20,6 +20,7 @@ class SpendingScreen extends StatelessWidget {
           'Spending',
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
             fontSize: 40,
           ),

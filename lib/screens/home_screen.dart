@@ -17,9 +17,10 @@ class HomeScreen extends StatelessWidget {
         toolbarHeight: 100,
         centerTitle: true,
         title: const Text(
-          'Home Page',
+            'Home Page',
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
             fontSize: 40,
           ),

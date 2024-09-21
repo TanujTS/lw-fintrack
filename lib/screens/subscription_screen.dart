@@ -18,7 +18,8 @@ class SubscriptionScreen extends StatelessWidget {
         title: const Text(
           'Subscriptions',
           textAlign: TextAlign.center,
-          style: TextStyle(
+         style: TextStyle(
+            fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
             fontSize: 40,
           ),

@@ -19,8 +19,10 @@ class RewardsScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text(
           'Rewards',
+          
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
             fontSize: 40,
           ),
