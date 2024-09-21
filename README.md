@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+Figma Illustration - https://www.figma.com/proto/IDBlznqJOaZbVwCE6lmOvn/Finance-Tracker?node-id=2-167&node-type=canvas&t=TNlGkjBw4GlCWwlB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A167
