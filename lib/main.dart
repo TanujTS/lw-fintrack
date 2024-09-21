@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch().copyWith(
           secondary: Colors.teal
         ),
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 63, 63, 63),
       ),
       home: MainScreen(),
     );
