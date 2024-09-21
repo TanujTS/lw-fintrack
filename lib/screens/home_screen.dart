@@ -1,11 +1,30 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(60),
+          ),
+          
+        ),
+        elevation: 10,
+        toolbarHeight: 100,
+        centerTitle: true,
+        title: Text(
+          'Home Page',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 40,
+          ),
+        ),
         backgroundColor: Colors.cyan,
       ),
       body: Padding(
@@ -19,7 +38,7 @@ class HomeScreen extends StatelessWidget {
             Text('Recent Transactions', style: TextStyle(fontSize: 20)),
             Expanded(
               child: ListView(
-                children: [
+                children: const [
                   ListTile(
                     title: Text('Transaction 1'),
                     subtitle: Text('Rs. 57'),
