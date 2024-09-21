@@ -43,26 +43,32 @@ class SpendingScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 20)),
             const SizedBox(height: 20),
             // Placeholder for circular chart
-            PieChart(PieChartData(sections: [
-              PieChartSectionData(
-                color: Colors.red,
-                value: 20,
-                title: 'Entertainment',
-                radius: 50,
+            Flexible(
+              child: PieChart(
+                PieChartData(
+                  sections: [
+                    PieChartSectionData(
+                      color: Colors.red,
+                      value: 20,
+                      title: 'Entertainment',
+                      radius: 50,
+                    ),
+                    PieChartSectionData(
+                      color: Colors.green,
+                      value: 30,
+                      title: 'Transport',
+                      radius: 50,
+                    ),
+                    PieChartSectionData(
+                      color: Colors.yellow,
+                      value: 10,
+                      title: 'Shopping',
+                      radius: 50,
+                    ),
+                  ],
+                ),
               ),
-              PieChartSectionData(
-                color: Colors.green,
-                value: 30,
-                title: 'Transport',
-                radius: 50,
-              ),
-              PieChartSectionData(
-                color: Colors.yellow,
-                value: 10,
-                title: 'Shopping',
-                radius: 50,
-              )
-            ]))
+            ),
           ],
         ),
       ),
